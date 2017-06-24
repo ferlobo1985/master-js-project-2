@@ -50,8 +50,6 @@
             deleteOne();
 
         }
-
-
         // Add event listener
         var addBtn = document.querySelector('#add_applicant');
 
@@ -68,10 +66,8 @@
         return false;
     };
 
-
     this.deleteOne = function(){
         var item = document.querySelectorAll('.name-tag');
-
         function removeIt(element){
             var attr = parseInt(element.getAttribute('data-id'));
 
@@ -85,8 +81,6 @@
             });
         }
     };
-
-
 
     this.getRandomUser = function(){
         var resultsButton = document.querySelector('#show_results');
@@ -138,10 +132,7 @@
 
             applicants = [];
         });
-
     };
-
-
 
     this.init();
 })();
